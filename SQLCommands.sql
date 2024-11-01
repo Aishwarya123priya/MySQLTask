@@ -10,9 +10,8 @@ use onlinetask;
 -- creating tables
 create table manager (
     managerid int primary key,
-    name varchar(50),
-    empid int
-);
+    name varchar(50)
+    );
 
 create table employee (
     empid int primary key,
@@ -65,6 +64,7 @@ select manager.name as manager_name, employee.firstname, employee.lastname
 from manager
 join employee on manager.managerid = employee.managerid
 order by manager.managerid;
+
 
 -- 2. how many employees are there in under manager Alice or any name
 select manager.name as manager_name, count(employee.empid) as employee_count
