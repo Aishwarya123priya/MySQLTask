@@ -62,8 +62,8 @@ INSERT INTO employee (empid, firstname, lastname, managerid) VALUES
 
 -- 1.get all employees under each manager
 select manager.name as manager_name, employee.firstname, employee.lastname
-from employee 
-join manager on employee.managerid = employee.managerid
+from manager
+join employee on manager.managerid = employee.managerid
 order by manager.managerid;
 
 -- 2. how many employees are there in under manager Alice or any name
