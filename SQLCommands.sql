@@ -1,5 +1,4 @@
 -- Aishwarya Priya
--- A766639
 
 -- first let's create the database
 
